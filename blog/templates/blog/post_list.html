@@ -8,13 +8,13 @@
             <h1><a href="/">Blog Django Girls</a></h1>
         </header>
         
+        {% for post in posts %}
         <article>
             {% for post in posts %}
             <time>publication: 04.12.2021, 14:40</time>
             <h2><a href="">Mon premier article</a></h2>
             <p>Hewwoooooo my first post hereeee</p>
-            {% endfor %}
         </article>
-    
+        {% endfor %}
     </body>
 </html>

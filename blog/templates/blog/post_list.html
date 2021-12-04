@@ -10,9 +10,9 @@
         
     {% for post in posts %}
         <article>
-            <time>publication: 04.12.2021, 14:40</time>
-            <h2><a href="">Mon premier article</a></h2>
-            <p>Hewwoooooo my first post hereeee</p>
+            <time>published: {{ post.published_date }}</time>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
         </article>
     {% endfor %}
 
